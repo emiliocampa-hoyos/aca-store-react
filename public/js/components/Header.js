@@ -1,4 +1,6 @@
 function Header(props) {
+
+
     return (<nav className="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div className="container">
       
@@ -24,7 +26,7 @@ function Header(props) {
                     <a href="#">Contact</a>
                 </li>
                 <li >
-                    <a href="#">Items In Cart {props.numberOfItemsInCart}</a>
+                    <a href="#">Items In Cart {props.numberOfItemsInCart.length}</a>
                 </li>
             </ul>
         </div>

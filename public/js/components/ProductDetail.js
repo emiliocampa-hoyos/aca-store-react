@@ -1,4 +1,5 @@
 function ProductDetail(props) {
+
     let product = props.products;
 
     return (
@@ -10,6 +11,8 @@ function ProductDetail(props) {
                 <h4><a href="#">{product.name}</a>
                 </h4>
                 <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
+
+                    <button onClick={() => { props.addToCart(product);}}>Add To Cart</button>
             </div>
             <Rating reviews = {product.reviews} rating = {product.rating}/>
         </div>
